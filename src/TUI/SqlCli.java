@@ -46,13 +46,17 @@ public class SqlCli {
                 connectToSqlServer();
                 return true;
 
-            case inputExit:
-                exit();
-                return true;
+                case inputCheckDatabase:
+                checkDatabaseConnection();
+                    return true;
 
-            case inputHelp:
+                case inputHelp:
                 displayHelp();
                 return true;
+
+                case inputExit:
+                    exit();
+                    return true;
 
             default:
                 System.out.println("Invalid input");
@@ -61,6 +65,10 @@ public class SqlCli {
     }
 
     private void connectToSqlServer() {
+
+    }
+
+    private void checkDatabaseConnection() {
 
     }
 
