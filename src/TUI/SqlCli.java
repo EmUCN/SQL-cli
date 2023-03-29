@@ -70,6 +70,7 @@ public class SqlCli {
 
     private void checkDatabaseConnection() {
 
+        System.out.println("Checking database connection");
     }
 
     private void exit(){
