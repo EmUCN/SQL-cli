@@ -30,7 +30,7 @@ public class SqlCli {
 
             String userInput = input.nextLine();
 
-            if(menuSelect(userInput) == false){
+            if(menuSelect(userInput) == false){ //if the user input is invalid, display the help menu.
                 System.out.println("Invalid input. Valid inputs: ");
                 displayHelp();
             }
